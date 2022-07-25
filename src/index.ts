@@ -5,7 +5,7 @@ import {
 import type { Plugin } from 'vite'
 
 export default function (
-  options: Parameters<typeof getUserAgentRegExp>[0]
+  options?: Parameters<typeof getUserAgentRegExp>[0]
 ): Plugin {
   const virtualModuleId = 'virtual:supported-browsers'
   const resolvedVirtualModuleId = '\0' + virtualModuleId
