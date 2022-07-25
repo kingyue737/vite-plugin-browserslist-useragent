@@ -20,7 +20,7 @@ export default function (
     load(id) {
       if (id === resolvedVirtualModuleId) {
         return `export const browsersRegexp = ${getUserAgentRegExp(options)}
-                export const browsersRegexps = ${getUserAgentRegExps(options)}`
+export const browsersRegexps = ${JSON.stringify(getUserAgentRegExps(options))}`
       }
     },
   }
