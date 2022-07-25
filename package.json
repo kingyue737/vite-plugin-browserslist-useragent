@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-browserslist-useragent",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A utility vite plugin to compile browserslist query to a RegExp to test browser useragent.",
   "author": "Yue JIN <yuejin13@fudan.edu.cn>",
   "packageManager": "pnpm@7.6.0",
@@ -38,8 +38,8 @@
   "scripts": {
     "build": "tsup src/index.ts --dts --format cjs,esm",
     "prepublishOnly": "npm run build",
-    "release": "bumpp --commit \"🔖 Release v\" --push --tag && npm publish --registry=\"https://registry.npmjs.org/\"",
-    "releaseTest": "bumpp --execute=\"npx gitmoji-changelog\" --commit \"🔖 Release v\" --tag"
+    "release": "bumpp --execute=\"pnpm changelog\" --commit \"🔖 Release v\" --push --tag --all && npm publish --registry=\"https://registry.npmjs.org/\"",
+    "changelog": "gitmoji-changelog"
   },
   "dependencies": {
     "browserslist-useragent-regexp": "^3.0.2"
