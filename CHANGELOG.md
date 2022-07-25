@@ -1,5 +1,13 @@
 # Changelog
 
+<a name="0.0.3"></a>
+## 0.0.3 (2022-07-25)
+
+### Changed
+
+- 🔧 Relax peer dependency as compatible with vite 2.x [[1cbbfbf](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/1cbbfbfc261bdd1fbb0032df54c87753d5df0206)]
+
+
 <a name="0.0.2"></a>
 ## 0.0.2 (2022-07-25)
 
