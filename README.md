@@ -43,6 +43,24 @@ if (browsersRegexp.test(navigator.userAgent)) {
 
 ```js
 export const browsersRegexp = /((CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS)[ +]+(11[_\.](3|4)|12[_\.](0|1))(?:[_\.]\d+)?)|(OperaMini(?:\/att)?\/?(\d+)?(?:\.\d+)?(?:\.\d+)?)|(Opera\/.+Opera Mobi.+Version\/46\.0)|(Opera\/46\.0.+Opera Mobi)|(Opera Mobi.+Opera(?:\/|\s+)46\.0)|(SamsungBrowser\/(8|9)\.2)|(Edge\/(17|18)(?:\.0)?)|(HeadlessChrome(?:\/(72|73)\.0\.\d+)?)|((Chromium|Chrome)\/(72|73)\.0(?:\.\d+)?)|(IEMobile[ \/]11\.0)|(Version\/12\.(0|1)(?:\.\d+)?.*Safari\/)|(Trident\/7\.0)|(Firefox\/(65|66)\.0\.\d+)|(Firefox\/(65|66)\.0(pre|[ab]\d+[a-z]*)?)|(([MS]?IE) 11\.0)/
+export const browsersRegexps = [
+  {
+    family: 'edge',
+    sourceRegExp: {},
+    sourceRegExpString: '(Edge)\\/(\\d+)(?:\\.(\\d+))?',
+    regExp: {},
+    resultFixedVersion: null,
+    requestVersions: [
+      [17, 0, 0],
+      [18, 0, 0],
+    ],
+    requestVersionsStrings: ['17.0.0', '18.0.0'],
+    resultMinVersion: null,
+    resultMaxVersion: null,
+    regExpString: 'Edge\\/(17|18)(?:\\.0)?',
+  },
+  /* ... */
+]
 ```
 
 
