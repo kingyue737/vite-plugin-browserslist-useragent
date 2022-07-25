@@ -1,0 +1,45 @@
+{
+  "name": "vite-plugin-browserslist-useragent",
+  "version": "0.0.1",
+  "description": "A utility vite plugin to compile browserslist query to a RegExp to test browser useragent.",
+  "author": "Yue JIN <yuejin13@fudan.edu.cn>",
+  "packageManager": "pnpm@7.6.0",
+  "license": "MIT",
+  "keywords": [
+    "browserslist",
+    "regexp",
+    "vite"
+  ],
+  "main": "index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "client.d.ts"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    },
+    "./*": "./*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kingyue737/vite-plugin-browserslist-useragent"
+  },
+  "bugs": {
+    "url": "https://github.com/kingyue737/vite-plugin-browserslist-useragent/issues"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format cjs,esm"
+  },
+  "dependencies": {
+    "browserslist-useragent-regexp": "^3.0.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "tsup": "^6.1.3",
+    "vite": "^3.0.2"
+  }
+}
