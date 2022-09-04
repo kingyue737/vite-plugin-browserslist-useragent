@@ -3,7 +3,7 @@
   "version": "0.0.3",
   "description": "A utility vite plugin to compile browserslist query to a RegExp to test browser useragent.",
   "author": "Yue JIN <yuejin13@fudan.edu.cn>",
-  "packageManager": "pnpm@7.6.0",
+  "packageManager": "pnpm@7.10.0",
   "engines": {
     "node": ">=14"
   },
@@ -54,5 +54,10 @@
   },
   "peerDependencies": {
     "vite": "^2.5.0 || ^3.0.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "useragent": "npm:@kingyue/useragent@^2.4.0"
+    }
   }
 }
