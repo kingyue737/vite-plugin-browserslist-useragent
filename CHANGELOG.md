@@ -1,5 +1,21 @@
 # Changelog
 
+<a name="0.1.0"></a>
+## 0.1.0 (2022-09-04)
+
+### Added
+
+- ✨ Overrides useragent [[bd1b8fa](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/bd1b8fab93fd8f156f3289e785014c0514ea156b)]
+
+### Changed
+
+- ⬆️ Update dependencies [[fc984af](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/fc984af7e7798c8dcd7113ecc2fd834a7a4169a5)]
+
+### Miscellaneous
+
+- 📝 Update description [[478f39b](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/478f39b3d6a6ff014297baf14ad6134b7341a723)]
+
+
 <a name="0.0.3"></a>
 ## 0.0.3 (2022-07-25)
 
