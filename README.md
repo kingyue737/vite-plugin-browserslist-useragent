@@ -84,6 +84,18 @@ Let [Vite](https://github.com/vitejs/vite) transform and bundle for you and no n
 
 `browserslist-useragent-regexp` and its dependency [`useragent`](https://github.com/3rd-Eden/useragent) are no longer actively maintained. This plugin will patch and override deprecated dependencies.
 
+Recommend to override `useragent` with my [fork](https://github.com/kingyue737/useragent) to suppress annoying [warning of deprecated dependencies](https://github.com/3rd-Eden/useragent/issues/168) in original package. For example, pnpm users can add the following code in `package.json`:
+```json
+// package.json
+{
+  "pnpm": {
+    "overrides": {
+      "useragent": "npm:@kingyue/useragent@^2.4.0"
+    }
+  }
+}
+```
+
 ## Virtual Module
 
 Virtual module `virtual:supported-browsers` exposes two variables returned by the following two methods of `browserslist-useragent-regexp` whose arguments are passed from plugin's [options](#options):
