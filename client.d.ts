@@ -1,5 +1,5 @@
 declare module 'virtual:supported-browsers' {
-  import type { IBrowserVersionedRegExp } from 'browserslist-useragent-regexp'
-  export const browsersRegexp: RegExp
-  export const browsersRegexps: IBrowserVersionedRegExp[]
+  import type { BrowserVersionedRegex } from 'browserslist-useragent-regexp'
+  export const browsersRegex: RegExp
+  export const browsersRegexes: BrowserVersionedRegex[]
 }

@@ -1,11 +1,11 @@
 import {
-  getUserAgentRegExp,
-  getUserAgentRegExps,
+  getUserAgentRegex,
+  getUserAgentRegexes,
 } from 'browserslist-useragent-regexp'
 import type { Plugin } from 'vite'
 
 export default function (
-  options?: Parameters<typeof getUserAgentRegExp>[0]
+  options?: Parameters<typeof getUserAgentRegex>[0]
 ): Plugin {
   const virtualModuleId = 'virtual:supported-browsers'
   const resolvedVirtualModuleId = '\0' + virtualModuleId
@@ -19,8 +19,8 @@ export default function (
     },
     load(id) {
       if (id === resolvedVirtualModuleId) {
-        return `export const browsersRegexp = ${getUserAgentRegExp(options)}
-export const browsersRegexps = ${JSON.stringify(getUserAgentRegExps(options))}`
+        return `export const browsersRegex = ${getUserAgentRegex(options)}
+export const browsersRegexes = ${JSON.stringify(getUserAgentRegexes(options))}`
       }
     },
   }
