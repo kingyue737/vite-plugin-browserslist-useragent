@@ -67,11 +67,11 @@ export const browsersRegexps = [
 ## Install
 
 ```bash
+pnpm add -D vite-plugin-browserslist-useragent
+# or
 npm i -D vite-plugin-browserslist-useragent
 # or
 yarn add -D vite-plugin-browserslist-useragent
-# or
-pnpm add -D vite-plugin-browserslist-useragent
 ```
 
 ## Why?
@@ -84,29 +84,17 @@ Let [Vite](https://github.com/vitejs/vite) transform and bundle for you and no n
 
 `browserslist-useragent-regexp` and its dependency [`useragent`](https://github.com/3rd-Eden/useragent) are no longer actively maintained. This plugin will patch and override deprecated dependencies.
 
-Recommend to override `useragent` with my [fork](https://github.com/kingyue737/useragent) to suppress annoying [warning of deprecated dependencies](https://github.com/3rd-Eden/useragent/issues/168) in original package. For example, pnpm users can add the following code in `package.json`:
-```json
-// package.json
-{
-  "pnpm": {
-    "overrides": {
-      "useragent": "npm:@kingyue/useragent@^2.4.0"
-    }
-  }
-}
-```
-
 ## Virtual Module
 
 Virtual module `virtual:supported-browsers` exposes two variables returned by the following two methods of `browserslist-useragent-regexp` whose arguments are passed from plugin's [options](#options):
 
-### [getUserAgentRegExp(options)=> browsersRegexp: RegExp](https://browserslist.github.io/browserslist-useragent-regexp/modules/index.html#getuseragentregexp)
+### [getUserAgentRegex(options)=> browsersRegexp: RegExp](https://browserslist.github.io/browserslist-useragent-regexp/functions/getUserAgentRegex.html)
 
-Compile browserslist query to one RegExp.
+Compile browserslist query to one regex.
 
-### [getUserAgentRegExps(options)=> browsersRegexps: IBrowserVersionedRegExp[]](https://browserslist.github.io/browserslist-useragent-regexp/modules/index.html#getuseragentregexps)
+### [getUserAgentRegexs(options)=> browsersRegexps: BrowserVersionedRegex[]](https://browserslist.github.io/browserslist-useragent-regexp/functions/getUserAgentRegexes.html)
 
-Compile browserslist query to [RegExps for each browser](#regexp-info-object).
+Compile browserslist query to [regexes for each browser](#regexp-info-object).
 
 #### Options
 
@@ -125,11 +113,11 @@ Compile browserslist query to [RegExps for each browser](#regexp-info-object).
 |----------|------|-------------|
 | family | `string` | Browser family. |
 | requestVersions | `[number, number, number][]` | Versions provided by browserslist. |
-| regExp | `RegExp` | RegExp to match useragent with family and versions. |
-| sourceRegExp | `RegExp` | Original useragent RegExp, without versions. |
-| resultFixedVersion | `[number, number, number] \| null` | Useragent version of RegExp. |
-| resultMinVersion | `[number, number, number] \| null` | Useragent min version of RegExp. |
-| resultMaxVersion | `[number, number, number] \| null` | Useragent max version of RegExp. |
+| regex | `RegExp` | Regex to match useragent with family and versions. |
+| sourceRegex | `RegExp` | Original useragent regex, without versions. |
+| version | `[number, number, number] \| null` | Useragent version of regex. |
+| minVersion | `[number, number, number] \| null` | Useragent min version of regex. |
+| maxVersion | `[number, number, number] \| null` | Useragent max version of regex. |
 
 ### Client Types
 
