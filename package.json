@@ -1,5 +1,6 @@
 {
   "name": "vite-plugin-browserslist-useragent",
+  "type": "module",
   "version": "0.1.0",
   "description": "A utility vite plugin to compile browserslist query to a RegExp to test browser useragent.",
   "author": "Yue JIN <yuejin13@fudan.edu.cn>",
@@ -14,8 +15,8 @@
     "vite-plugin",
     "useragent"
   ],
-  "main": "index.js",
-  "module": "dist/index.mjs",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist",
@@ -23,8 +24,8 @@
   ],
   "exports": {
     ".": {
-      "require": "./dist/index.js",
-      "import": "./dist/index.mjs"
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
     },
     "./*": "./*"
   },
@@ -37,7 +38,7 @@
     "url": "https://github.com/kingyue737/vite-plugin-browserslist-useragent/issues"
   },
   "scripts": {
-    "build": "tsup src/index.ts --dts --format cjs,esm",
+    "build": "tsup src/index.ts --dts --format esm",
     "prepublishOnly": "npm run build",
     "release": "bumpp --execute=\"pnpm changelog\" --commit \"🔖 Release v\" --push --tag --all && npm publish --registry=\"https://registry.npmjs.org/\"",
     "changelog": "gitmoji-changelog"
