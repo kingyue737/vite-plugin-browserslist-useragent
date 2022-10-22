@@ -5,14 +5,14 @@
 
 ### Changed
 
+- 💥 Drop support for CJS because of browserslist/browserslist-useragent-regexp[#1450](https://github.com/kingyue737/vite-plugin-browserslist-useragent/issues/1450) [[17b2b6f](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/17b2b6f45d8de6189e0e40a647e8581961ddbc7f)]
+- 💥 Update virtual module apis to align with upstream [[2d44b6f](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/2d44b6fa5e664e031d591b661254eb2b0bfb4e70)]
 - ⬆️ Upgrade browserslist-useragent-regexp [[83db639](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/83db6396bea05c4a3d30b1efb70c25f559c869ec)]
 
 ### Miscellaneous
 
-- 💥 Drop support for CJS because of browserslist/browserslist-useragent-regexp[#1450](https://github.com/kingyue737/vite-plugin-browserslist-useragent/issues/1450) [[17b2b6f](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/17b2b6f45d8de6189e0e40a647e8581961ddbc7f)]
 - 📝 Update examples according to breaking change [[fba6eb0](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/fba6eb04c68d9a5cb72fe8c0158abdab3e9923be)]
 - 📝 Update JS APIs [[d84ab5c](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/d84ab5c63364f7f12864d284a8903d10aaf3bad9)]
-- 💥 Update virtual module apis to align with upstream [[2d44b6f](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/2d44b6fa5e664e031d591b661254eb2b0bfb4e70)]
 - 📝 Add overrides guide [[e98eb98](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/e98eb984eaa11acc6a1793c4d36e1e81a73df9e9)]
 
 
