@@ -9,60 +9,55 @@ A vite plugin wrapping [browserslist-useragent-regexp](https://github.com/browse
 
 Simplest example: you can detect supported browsers on client-side.
 
-1) Create `.browserslistrc` config, for example like this:
+1. Create `.browserslistrc` config, for example like this:
 
 ```
 last 2 versions
 not dead
 ```
 
-2) Add plugin to `vite.config.*`:
+2. Add plugin to `vite.config.m*`:
+   > Since v0.2.0, this plugin only supports ESM as `browserslist-useragent-regexp` [dropped support for CJS](https://github.com/browserslist/browserslist-useragent-regexp/commit/41456bc22b789fee57384a00abb64e0690ded08a). If you want to use CJS version, install v0.1.0 instead.
 
 ```ts
-// vite.config.ts
+// vite.config.mts
 import SupportedBrowsers from 'vite-plugin-browserslist-useragent'
 export default defineConfig({
-  plugins: [
-    SupportedBrowsers(/* options */),
-  ],
+  plugins: [SupportedBrowsers(/* options */)],
 })
-
 ```
 
-3) Import RegExp from virtual module:
+3. Import RegExp from virtual module:
 
 ```js
-import { browsersRegexp } from 'virtual:supported-browsers'
+import { browsersRegex } from 'virtual:supported-browsers'
 
-if (browsersRegexp.test(navigator.userAgent)) {
-    alert('Your browser is supported.');
+if (browsersRegex.test(navigator.userAgent)) {
+  alert('Your browser is supported.')
 }
 ```
 
 Auto-generated `virtual:supported-browsers`:
 
 ```js
-export const browsersRegexp = /((CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS)[ +]+(11[_\.](3|4)|12[_\.](0|1))(?:[_\.]\d+)?)|(OperaMini(?:\/att)?\/?(\d+)?(?:\.\d+)?(?:\.\d+)?)|(Opera\/.+Opera Mobi.+Version\/46\.0)|(Opera\/46\.0.+Opera Mobi)|(Opera Mobi.+Opera(?:\/|\s+)46\.0)|(SamsungBrowser\/(8|9)\.2)|(Edge\/(17|18)(?:\.0)?)|(HeadlessChrome(?:\/(72|73)\.0\.\d+)?)|((Chromium|Chrome)\/(72|73)\.0(?:\.\d+)?)|(IEMobile[ \/]11\.0)|(Version\/12\.(0|1)(?:\.\d+)?.*Safari\/)|(Trident\/7\.0)|(Firefox\/(65|66)\.0\.\d+)|(Firefox\/(65|66)\.0(pre|[ab]\d+[a-z]*)?)|(([MS]?IE) 11\.0)/
-export const browsersRegexps = [
+export const browsersRegex =
+  /((CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS)[ +]+(11[_\.](3|4)|12[_\.](0|1))(?:[_\.]\d+)?)|(OperaMini(?:\/att)?\/?(\d+)?(?:\.\d+)?(?:\.\d+)?)|(Opera\/.+Opera Mobi.+Version\/46\.0)|(Opera\/46\.0.+Opera Mobi)|(Opera Mobi.+Opera(?:\/|\s+)46\.0)|(SamsungBrowser\/(8|9)\.2)|(Edge\/(17|18)(?:\.0)?)|(HeadlessChrome(?:\/(72|73)\.0\.\d+)?)|((Chromium|Chrome)\/(72|73)\.0(?:\.\d+)?)|(IEMobile[ \/]11\.0)|(Version\/12\.(0|1)(?:\.\d+)?.*Safari\/)|(Trident\/7\.0)|(Firefox\/(65|66)\.0\.\d+)|(Firefox\/(65|66)\.0(pre|[ab]\d+[a-z]*)?)|(([MS]?IE) 11\.0)/
+export const browsersRegexes = [
   {
     family: 'edge',
-    sourceRegExp: {},
-    sourceRegExpString: '(Edge)\\/(\\d+)(?:\\.(\\d+))?',
-    regExp: {},
-    resultFixedVersion: null,
+    sourceRegex: {},
+    sourceRegexString: 'Edge?\\/(\\d+)(\\.(\\d+)|)(\\.(\\d+)|)',
+    regex: {},
     requestVersions: [
-      [17, 0, 0],
-      [18, 0, 0],
+      [105, 0, 0],
+      [106, 0, 0],
     ],
-    requestVersionsStrings: ['17.0.0', '18.0.0'],
-    resultMinVersion: null,
-    resultMaxVersion: null,
-    regExpString: 'Edge\\/(17|18)(?:\\.0)?',
+    requestVersionsStrings: ['105.0.0', '106.0.0'],
+    regexString: 'Edge?\\/(105|106)(\\.0|)(\\.\\d+|)',
   },
   /* ... */
 ]
 ```
-
 
 ## Install
 
@@ -98,26 +93,26 @@ Compile browserslist query to [regexes for each browser](#regexp-info-object).
 
 #### Options
 
-| Option | Type | Default | Description |
-|--------|------|---------|-------------|
-| browsers | `string \| string[]` | — | Manually provide a browserslist query (or an array of queries). Specifying this overrides the browserslist configuration specified in your project. |
-| env | `string` | — | When multiple browserslist [environments](https://github.com/ai/browserslist#environments) are specified, pick the config belonging to this environment. |
-| ignorePatch | `boolean` | `true` | Ignore differences in patch browser numbers. |
-| ignoreMinor | `boolean` | `false` | Ignore differences in minor browser versions. |
-| allowHigherVersions | `boolean` | `false` | For all the browsers in the browserslist query, return a match if the useragent version is equal to or higher than the one specified in browserslist. |
-| allowZeroSubversions | `boolean` | `false` | Ignore match of patch or patch and minor, if they are 0. |
+| Option               | Type                 | Default | Description                                                                                                                                              |
+| -------------------- | -------------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| browsers             | `string \| string[]` | —       | Manually provide a browserslist query (or an array of queries). Specifying this overrides the browserslist configuration specified in your project.      |
+| env                  | `string`             | —       | When multiple browserslist [environments](https://github.com/ai/browserslist#environments) are specified, pick the config belonging to this environment. |
+| ignorePatch          | `boolean`            | `true`  | Ignore differences in patch browser numbers.                                                                                                             |
+| ignoreMinor          | `boolean`            | `false` | Ignore differences in minor browser versions.                                                                                                            |
+| allowHigherVersions  | `boolean`            | `false` | For all the browsers in the browserslist query, return a match if the useragent version is equal to or higher than the one specified in browserslist.    |
+| allowZeroSubversions | `boolean`            | `false` | Ignore match of patch or patch and minor, if they are 0.                                                                                                 |
 
 #### RegExp info object
 
-| Property | Type | Description |
-|----------|------|-------------|
-| family | `string` | Browser family. |
-| requestVersions | `[number, number, number][]` | Versions provided by browserslist. |
-| regex | `RegExp` | Regex to match useragent with family and versions. |
-| sourceRegex | `RegExp` | Original useragent regex, without versions. |
-| version | `[number, number, number] \| null` | Useragent version of regex. |
-| minVersion | `[number, number, number] \| null` | Useragent min version of regex. |
-| maxVersion | `[number, number, number] \| null` | Useragent max version of regex. |
+| Property        | Type                               | Description                                        |
+| --------------- | ---------------------------------- | -------------------------------------------------- |
+| family          | `string`                           | Browser family.                                    |
+| requestVersions | `[number, number, number][]`       | Versions provided by browserslist.                 |
+| regex           | `RegExp`                           | Regex to match useragent with family and versions. |
+| sourceRegex     | `RegExp`                           | Original useragent regex, without versions.        |
+| version         | `[number, number, number] \| null` | Useragent version of regex.                        |
+| minVersion      | `[number, number, number] \| null` | Useragent min version of regex.                    |
+| maxVersion      | `[number, number, number] \| null` | Useragent max version of regex.                    |
 
 ### Client Types
 
@@ -125,8 +120,8 @@ If you want type definition of `virtual:supported-browsers`, add `vite-plugin-br
 
 ```json
 {
-  "compilerOptions":{
-    "types":["vite-plugin-browserslist-useragent/client"]
+  "compilerOptions": {
+    "types": ["vite-plugin-browserslist-useragent/client"]
   }
 }
 ```
