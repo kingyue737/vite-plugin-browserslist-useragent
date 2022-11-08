@@ -77,8 +77,6 @@ https://github.com/browserslist/browserslist-useragent-regexp#why
 
 Let [Vite](https://github.com/vitejs/vite) transform and bundle for you and no need to run CLI every time you change browserslist.
 
-`browserslist-useragent-regexp` and its dependency [`useragent`](https://github.com/3rd-Eden/useragent) are no longer actively maintained. This plugin will patch and override deprecated dependencies.
-
 ## Virtual Module
 
 Virtual module `virtual:supported-browsers` exposes two variables returned by the following two methods of `browserslist-useragent-regexp` whose arguments are passed from plugin's [options](#options):
