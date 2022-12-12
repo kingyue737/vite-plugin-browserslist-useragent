@@ -1,5 +1,13 @@
 # Changelog
 
+<a name="0.2.2"></a>
+## 0.2.2 (2022-12-12)
+
+### Changed
+
+- ⬆️ Update to vite 4 [[74f3772](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/74f3772eb6258b46aaf922b7a2daa90e22eef03c)]
+
+
 <a name="0.2.1"></a>
 ## 0.2.1 (2022-11-08)
 
