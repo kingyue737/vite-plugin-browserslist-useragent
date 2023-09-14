@@ -1,5 +1,14 @@
 # Changelog
 
+<a name="0.3.0"></a>
+## 0.3.0 (2023-09-14)
+
+### Changed
+
+- 💥 Resupport both CJS and ESM vite config [[fa3deee](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/fa3deee62ec22851afc73018b16dbbfed91bf2a1)]
+- ⬆️ Upgrade dependencies [[e7a6e5d](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/e7a6e5dcadc601e37b5f68bf576a8538b559ad4b)]
+
+
 <a name="0.2.2"></a>
 ## 0.2.2 (2022-12-12)
 
