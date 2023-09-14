@@ -16,11 +16,10 @@ last 2 versions
 not dead
 ```
 
-2. Add plugin to `vite.config.m*`:
-   > Since v0.2.0, this plugin only supports ESM as `browserslist-useragent-regexp` [dropped support for CJS](https://github.com/browserslist/browserslist-useragent-regexp/commit/41456bc22b789fee57384a00abb64e0690ded08a). If you want to use CJS version, install v0.1.0 instead.
+2. Add plugin to `vite.config.*`:
 
 ```ts
-// vite.config.mts
+// vite.config.ts
 import SupportedBrowsers from 'vite-plugin-browserslist-useragent'
 export default defineConfig({
   plugins: [SupportedBrowsers(/* options */)],
