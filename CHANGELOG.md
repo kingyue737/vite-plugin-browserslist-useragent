@@ -1,5 +1,13 @@
 # Changelog
 
+<a name="0.4.0"></a>
+## 0.4.0 (2023-11-21)
+
+### Changed
+
+- ⬆️ Up to Vite 5 [[6f3fbb2](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/6f3fbb264378b3f18319d1d7dbbcb4d42839d1d4)]
+
+
 <a name="0.3.0"></a>
 ## 0.3.0 (2023-09-14)
 
