@@ -1,5 +1,17 @@
 # Changelog
 
+<a name="0.4.1"></a>
+## 0.4.1 (2024-01-03)
+
+### Added
+
+- ✨ Add playground [[d94b4e8](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/d94b4e8ef2dc0a45014ce1a013ab5d0631f540b4)]
+
+### Fixed
+
+- 🐛 Add client.d.ts to exports [[30e9481](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/30e9481c75953365ca8b043605e2aabf183f35a6)]
+
+
 <a name="0.4.0"></a>
 ## 0.4.0 (2023-11-21)
 
