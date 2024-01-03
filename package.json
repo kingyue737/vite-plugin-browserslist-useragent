@@ -4,7 +4,7 @@
   "version": "0.4.0",
   "description": "A utility vite plugin to compile browserslist query to a RegExp to test browser useragent.",
   "author": "Yue JIN <yuejin13@fudan.edu.cn>",
-  "packageManager": "pnpm@8.10.5",
+  "packageManager": "pnpm@8.14.0",
   "engines": {
     "node": ">=14"
   },
@@ -23,6 +23,9 @@
     "client.d.ts"
   ],
   "exports": {
+    "./client": {
+      "types": "./client.d.ts"
+    },
     ".": {
       "import": {
         "default": "./dist/index.js",
@@ -50,16 +53,16 @@
     "changelog": "gitmoji-changelog"
   },
   "dependencies": {
-    "browserslist": "^4.22.1",
-    "browserslist-useragent-regexp": "^4.1.0"
+    "browserslist": "^4.22.2",
+    "browserslist-useragent-regexp": "^4.1.1"
   },
   "devDependencies": {
-    "bumpp": "^9.2.0",
+    "bumpp": "^9.2.1",
     "gitmoji-changelog": "^2.3.0",
-    "prettier": "^3.1.0",
+    "prettier": "^3.1.1",
     "tsup": "^8.0.1",
-    "typescript": "^5.3.2",
-    "vite": "^5.0.0"
+    "typescript": "^5.3.3",
+    "vite": "^5.0.10"
   },
   "peerDependencies": {
     "vite": "^3.0.0 || ^4.0.0 || ^5.0.0"
