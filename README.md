@@ -1,8 +1,7 @@
 # vite-plugin-browserslist-useragent
 
 [![npm version](https://img.shields.io/npm/v/vite-plugin-browserslist-useragent)](https://www.npmjs.com/package/vite-plugin-browserslist-useragent)
-[![Code style: Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg)](https://github.com/RichardLitt/standard-readme)
+[![npm downloads](https://img.shields.io/npm/dm/vite-plugin-browserslist-useragent)](https://www.npmjs.com/package/vite-plugin-browserslist-useragent)
 [![gitmoji](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg)](https://gitmoji.dev)
 
 A vite plugin wrapping [browserslist-useragent-regexp](https://github.com/browserslist/browserslist-useragent-regexp) which provides utility RegExps compiled by [browserslist query](https://github.com/browserslist/browserslist#queries) to test browser useragent.
