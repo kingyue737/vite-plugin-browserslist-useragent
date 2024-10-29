@@ -6,7 +6,7 @@
   "author": "Yue JIN <yuejin13@fudan.edu.cn>",
   "packageManager": "pnpm@9.5.0",
   "engines": {
-    "node": ">=14.21.3"
+    "node": ">=22.11.0"
   },
   "license": "MIT",
   "keywords": [
