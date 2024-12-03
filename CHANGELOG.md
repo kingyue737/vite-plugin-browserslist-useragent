@@ -1,5 +1,20 @@
 # Changelog
 
+<a name="0.5.0"></a>
+## 0.5.0 (2024-12-03)
+
+### Changed
+
+- 🎨 Remove unused config from prettier [[9052ebb](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/9052ebb84877a47e1c6cb90c0356846d03644dc7)]
+- ⬆️ Up sub deps [[003fe32](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/003fe32dd75916adcfb282d90226968ee865cbef)]
+- ⬆️ Upgrade all non-major dependencies [[94b2d51](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/94b2d517ba51c0296dc78a2a168186ef5e36f217)]
+- ⬆️ Upgrade dependency vite to v6 [[528085e](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/528085ed1c172a9d91eeedf80d1a33ee690543eb)]
+
+### Fixed
+
+- 🐛 Types entry in package.json should come after default [[3768125](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/3768125c6abaf6329faa3537fca98ca21a176323)]
+
+
 <a name="0.4.2"></a>
 ## 0.4.2 (2024-07-10)
 
