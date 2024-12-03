@@ -5,9 +5,6 @@
   "description": "A utility vite plugin to compile browserslist query to a RegExp to test browser useragent.",
   "author": "Yue JIN <yuejin13@fudan.edu.cn>",
   "packageManager": "pnpm@9.14.4",
-  "engines": {
-    "node": ">=14.21.3"
-  },
   "license": "MIT",
   "keywords": [
     "browserslist",
