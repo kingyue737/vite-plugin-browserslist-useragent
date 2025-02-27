@@ -1,4 +1,7 @@
-import type { getUserAgentRegex } from 'browserslist-useragent-regexp'
+import {
+  getUserAgentRegex,
+  getUserAgentRegexes,
+} from 'browserslist-useragent-regexp'
 import type { Plugin } from 'vite'
 
 export default function (
@@ -14,11 +17,8 @@ export default function (
         return resolvedVirtualModuleId
       }
     },
-    async load(id) {
+    load(id) {
       if (id === resolvedVirtualModuleId) {
-        const { getUserAgentRegex, getUserAgentRegexes } = await import(
-          'browserslist-useragent-regexp'
-        )
         return `export const browsersRegex = ${getUserAgentRegex(options)}
                 export const browsersRegexes = ${JSON.stringify(
                   getUserAgentRegexes(options),
