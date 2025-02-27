@@ -1,5 +1,18 @@
 # Changelog
 
+<a name="0.6.0"></a>
+## 0.6.0 (2025-02-27)
+
+### Changed
+
+- ⬆️ Upgrade all non-major dependencies [[1ec06df](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/1ec06dfae46c5489e6499b0d7ce1f0558edb43bf)]
+- ⬆️ Upgrade pnpm to v10 [[c244a28](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/c244a28eec5325adc7ddc7b32eb5aa2075b9a5ca)]
+
+### Miscellaneous
+
+- 💥 Drop CJS [[fdacc8c](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/fdacc8c71383dca72703e7601f1713728246aac0)]
+
+
 <a name="0.5.0"></a>
 ## 0.5.0 (2024-12-03)
 

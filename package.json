@@ -1,7 +1,7 @@
 {
   "name": "vite-plugin-browserslist-useragent",
   "type": "module",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "A utility vite plugin to compile browserslist query to a RegExp to test browser useragent.",
   "author": "Yue JIN <yuejin13@fudan.edu.cn>",
   "packageManager": "pnpm@10.5.2",
