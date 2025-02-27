@@ -54,7 +54,7 @@
     "browserslist-useragent-regexp": "^4.1.3"
   },
   "devDependencies": {
-    "bumpp": "^9.11.1",
+    "bumpp": "^10.0.3",
     "gitmoji-changelog": "^2.3.0",
     "prettier": "^3.5.2",
     "tsup": "^8.4.0",
