@@ -1,5 +1,14 @@
 # Changelog
 
+<a name="0.6.1"></a>
+## 0.6.1 (2025-06-25)
+
+### Changed
+
+- ⬆️ Upgrade all non-major dependencies [[a7a90d3](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/a7a90d3e5c6e12c2afe8df031b2a82daf09ca341)]
+- ⬆️ Upgrade dependency vite to v7 [[d538d06](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/d538d063ee981a12f641143f71dd6e082017b5a7)]
+
+
 <a name="0.6.0"></a>
 ## 0.6.0 (2025-02-27)
 
