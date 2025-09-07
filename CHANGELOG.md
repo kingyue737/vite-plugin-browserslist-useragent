@@ -1,5 +1,18 @@
 # Changelog
 
+<a name="0.6.2"></a>
+## 0.6.2 (2025-09-07)
+
+### Changed
+
+- ⬆️ Up deps [[67c8554](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/67c855437a017de03ba15ec3e387e01edb51b646)]
+- ⬆️ Up deps [[071d130](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/071d130513ed792614cf5571a26acbd1d33bea3c)]
+
+### Miscellaneous
+
+- 🚀 Trusted publisher [[b73124f](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/b73124f39b52f3decc7a719170e39be0302bd0ce)]
+
+
 <a name="0.6.1"></a>
 ## 0.6.1 (2025-06-25)
 
