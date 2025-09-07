@@ -41,8 +41,7 @@
   },
   "scripts": {
     "build": "tsup src/index.ts --dts --format esm",
-    "prepublishOnly": "pnpm run build",
-    "release": "bumpp --execute=\"pnpm changelog\" --commit \"🔖 Release v\" --push --tag --all && npm publish --registry=\"https://registry.npmjs.org/\"",
+    "release": "bumpp --execute=\"pnpm changelog\" --commit \"🔖 Release v\" --push --tag --all",
     "changelog": "gitmoji-changelog"
   },
   "dependencies": {
@@ -53,6 +52,7 @@
     "bumpp": "^10.2.3",
     "gitmoji-changelog": "^2.3.0",
     "prettier": "^3.6.2",
+    "releaselog": "^6.0.3",
     "tsup": "^8.5.0",
     "typescript": "^5.9.2",
     "vite": "^7.1.4"
