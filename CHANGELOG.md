@@ -1,5 +1,22 @@
 # Changelog
 
+<a name="0.7.0"></a>
+## 0.7.0 (2026-03-13)
+
+### Changed
+
+- 🔧 Update tsconfig module resolution [[1ee7f1a](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/1ee7f1ab9e1dad8c780a103f6d78b72dbb01533b)]
+- ⬆️ Upgrade all non-major dependencies [[bff5567](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/bff55676ee1b9e3ce2d342744939e97b233f867f)]
+- ⬆️ Upgrade dependency vite to v8 [[025c4ec](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/025c4ec1102c31bb4d8dfaab438d0b5e375fd0a9)]
+- ⬆️ Upgrade all non-major dependencies [[8bd2131](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/8bd2131e61dec17efc84170856268d80d9104fd4)]
+- ⬆️ Upgrade actions/checkout action to v6 [[2ff24a3](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/2ff24a3c516737545fd802206744bcda738b602a)]
+- ⬆️ Upgrade pnpm to v10.21.0 [[52b2c71](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/52b2c71187d043d56740d6ed12cec4d691bce231)]
+- ⬆️ Upgrade all non-major dependencies [[acf87ea](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/acf87ea76311d88f658e298385bf49bafafbb5b2)]
+- ⬆️ Upgrade actions/setup-node action to v6 [[f3acf9b](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/f3acf9b619f30d255211b29163daea648b489b86)]
+- ⬆️ Upgrade dependency node to v24 [[5cce216](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/5cce2169e6af6021b670c33253f87e3646e59f10)]
+- ⬆️ Up deps [[4c1f933](https://github.com/kingyue737/vite-plugin-browserslist-useragent/commit/4c1f9331b658ffa564ea132b9512cbb9ee8a8b40)]
+
+
 <a name="0.6.2"></a>
 ## 0.6.2 (2025-09-07)
 
