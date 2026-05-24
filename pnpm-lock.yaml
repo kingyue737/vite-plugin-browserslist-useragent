@@ -25,8 +25,8 @@ importers:
         specifier: ^3.8.1
         version: 3.8.1
       releaselog:
-        specifier: ^7.0.2
-        version: 7.0.2
+        specifier: ^8.0.0
+        version: 8.0.0
       tsup:
         specifier: ^8.5.1
         version: 8.5.1(jiti@2.6.1)(postcss@8.5.8)(typescript@6.0.2)(yaml@2.8.2)
@@ -730,9 +730,9 @@ packages:
   chownr@1.1.4:
     resolution: {integrity: sha512-jJ0bqzaylmJtVnNgzTeSOs8DPavpbYgEr/b0YL8/2GO3xJEhInFmhKMUnEJQjZumK7KXGFhUy89PrsJWlakBVg==}
 
-  ci-logger@8.0.1:
-    resolution: {integrity: sha512-qyP6quwHiMa7X/EfWt4kXjuNi1A1TNhVkgvZbPMQNG+WRoKVVP5N1XtqLaeKtWUvfRpszfylDAK7SM7WCn4u6g==}
-    engines: {node: ^20.9.0 || ^22.11.0 || >=24.0.0}
+  ci-logger@9.0.0:
+    resolution: {integrity: sha512-buqUrAus0PsdowzSKcpIpBOiGYm4nUxUVqAhzBhTjw8GBOmZfl68zWKpk8D0pqN4iekU0ctEb6D+KbDolNZtFA==}
+    engines: {node: ^22.11.0 || ^24.11.0 || >=26}
 
   cli-cursor@2.1.0:
     resolution: {integrity: sha512-8lgKz8LmCRYZZQDpRyT2m5rKJ08TnU4tR9FFFW2rxpxR1FzWi4PQ/NfyODchAatHaUgnSPVcx/R5w6NuTBzFiw==}
@@ -2160,9 +2160,9 @@ packages:
     resolution: {integrity: sha512-dYqgNSZbDwkaJ2ceRd9ojCGjBq+mOm9LmtXnAnEGyHhN/5R7iDW2TRw3h+o/jCFxus3P2LfWIIiwowAjANm7IA==}
     engines: {node: '>= 0.4'}
 
-  releaselog@7.0.2:
-    resolution: {integrity: sha512-75K9254U6Xf224ZecuiNfVyVLUEDkN0tdhmIP+njaihw/rljOwukIx+Th6G1MM3taFm9hbCyoxc3pbZhteqSbg==}
-    engines: {node: ^20.9.0 || ^22.11.0 || >=24.0.0}
+  releaselog@8.0.0:
+    resolution: {integrity: sha512-1YDFvJZ81B/L5DUoQ1FoNg/q/e1lrLBNbwMUC3Sr8ZTC717KGmLtvEBic9KU/FX5XZSx/lqh12iNLsqRXoSdYQ==}
+    engines: {node: ^22.11.0 || ^24.11.0 || >=26}
     hasBin: true
 
   request@2.88.2:
@@ -2670,7 +2670,7 @@ packages:
 
   uuid@3.4.0:
     resolution: {integrity: sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==}
-    deprecated: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   validate-npm-package-license@3.0.4:
@@ -3366,7 +3366,7 @@ snapshots:
 
   chownr@1.1.4: {}
 
-  ci-logger@8.0.1: {}
+  ci-logger@9.0.0: {}
 
   cli-cursor@2.1.0:
     dependencies:
@@ -5057,9 +5057,9 @@ snapshots:
       gopd: 1.2.0
       set-function-name: 2.0.2
 
-  releaselog@7.0.2:
+  releaselog@8.0.0:
     dependencies:
-      ci-logger: 8.0.1
+      ci-logger: 9.0.0
       commander: 14.0.3
 
   request@2.88.2:
